@@ -1,3 +1,27 @@
+# custom react firebase auth
+
+requires "firebaseSetup.ts" file in /src/ directory containing:
+    import firebase from "firebase/app";
+    import "firebase/auth";
+    import "firebase/firestore";
+    
+    const firebaseConfig = {
+        *your config info here*
+      };
+    
+    firebase.initializeApp(firebaseConfig);
+    
+    const auth = firebase.auth();
+    const firestore = firebase.firestore();
+    
+    export {
+        auth,
+        firestore
+    }
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
