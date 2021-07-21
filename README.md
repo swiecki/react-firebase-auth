@@ -1,6 +1,7 @@
 # custom react firebase auth
 
-requires "firebaseSetup.ts" file in /src/ directory containing:
+requires `firebaseSetup.ts` file in `/src/` directory containing:
+
     import firebase from "firebase/app";
     import "firebase/auth";
     import "firebase/firestore";
